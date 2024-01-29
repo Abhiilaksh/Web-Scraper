@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-source=requests.get('https://timesofindia.indiatimes.com/city/jaipur/sorry-mummy-papa-jee-aspirant-ends-her-life-in-kota-leaves-suicide-note/articleshow/107229508.cms').text
+source=requests.get('https://timesofindia.indiatimes.com/india/union-minister-says-caa-will-be-implemented-in-one-week-mamata-banerjee-hits-back/articleshow/107229633.cms').text
 soup=BeautifulSoup(source, 'lxml')
 for heading in soup.find_all('h1'):
     print(heading.text)
