@@ -1,16 +1,20 @@
+# Web Scraping with Python
 
-# Web Scraping with BeautifulSoup
+This Python script uses BeautifulSoup, requests, and csv to scrape web page data and write it to a CSV file.
 
-This Python script uses the BeautifulSoup library to scrape news articles
+## How it Works
 
-## Dependencies
+1. The script opens (or creates if it doesn't exist) a CSV file named 'output.csv' in write mode.
+2. It writes a row with the headers 'URL' and 'Heading' to the CSV file.
+3. It opens another CSV file named 'input.csv' in read mode. This file is expected to contain URLs that the script will scrape data from.
+4. For each URL, it sends a GET request to the URL and gets the HTML content of the page.
+5. It creates a BeautifulSoup object with the HTML content, using 'lxml' as the parser.
+6. It finds all 'h1' elements (headings) in the HTML content.
+7. For each heading, it writes a row with the URL and the heading text to 'output.csv'.
 
-This script requires the following Python libraries:
+## Requirements
 
-- BeautifulSoup4
+- Python 3
+- BeautifulSoup
 - requests
-
-You can install these with pip:
-
-```bash
-pip install beautifulsoup4 requests
+- csv
