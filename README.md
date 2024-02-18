@@ -18,3 +18,7 @@ This Python script uses BeautifulSoup, requests, and csv to scrape web page data
 - BeautifulSoup
 - requests
 - csv
+
+
+Currently i am learning git
+and editing readme file of my webscraper
