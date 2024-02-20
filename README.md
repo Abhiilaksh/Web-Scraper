@@ -19,4 +19,3 @@ This Python script uses BeautifulSoup, requests, and csv to scrape web page data
 - requests
 - csv
 
-new branch called edit
