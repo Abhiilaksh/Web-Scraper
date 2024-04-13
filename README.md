@@ -1,6 +1,6 @@
 # Web Scraping with Python
 
-This Python script uses BeautifulSoup, requests, and csv to scrape web page data and write it to a CSV file.
+This is a basic Web Scraper which  uses BeautifulSoup, requests, and csv to scrape web page data and write it to a CSV file.
 
 ## How it Works
 
